@@ -1,4 +1,4 @@
-# docker-ioping
+# ioping-docker
 
 Alpine based docker image containing the [koct9i/ioping](https://github.com/koct9i/ioping) latency measuring tool.
 
