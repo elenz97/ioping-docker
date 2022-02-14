@@ -1,8 +1,10 @@
-FROM alpine:3.15 as builder
+FROM alpine:3.15
 
 RUN apk update && \
     apk add --no-cache ioping && \
     rm -rf /var/cache/apk/*
 
-ENTRYPOINT ['ioping']
+VOLUME /data
+WORKDIR /data
 
+ENTRYPOINT ["ioping"]
